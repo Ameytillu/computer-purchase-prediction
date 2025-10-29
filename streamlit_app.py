@@ -1,6 +1,15 @@
 import streamlit as st
 import pandas as pd
 import pickle
+from PIL import Image
+
+st.set_page_config(page_title="Computer Purchase Prediction App", page_icon="💻", layout="centered")
+
+# Add header/logo image
+st.image("https://i.imgur.com/tYVZ6Yp.png", width=180)  # Replace with your own logo link
+st.title("💻 Computer Purchase Prediction App")
+st.write("Predict whether a user is likely to buy a computer based on demographics and behavior data.")
+
 
 # Load model
 with open("model.pkl", "rb") as file:
@@ -60,4 +69,5 @@ if st.button("🔍 Predict"):
 # Footer
 st.write("---")
 st.caption("Created by Amey Tillu | MS in Hospitality & Tourism Data Analytics | Streamlit ML App 🚀")
+
 

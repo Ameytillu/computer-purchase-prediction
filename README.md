@@ -29,3 +29,5 @@ Model Building – Implemented Logistic Regression using a Scikit-Learn pipeline
 Evaluation – Analyzed accuracy, confusion matrix, and classification report.
 
 Deployment – Built an interactive Streamlit web app for real-time prediction and visualization.
+
+Access Demo at- https://computer-purchase-prediction-4onxl7bjizgs4zwenboncp.streamlit.app/ 

@@ -4,11 +4,8 @@ import numpy as np
 import pickle
 import os
 
-# Path to your saved model
-model_path = r"D:\Git Hub IMP\computer_purchase_prediction\model.pkl"
-
 # Load the trained model
-with open(model.pkl, "rb") as file:
+with open("model.pkl", "rb") as file:
     model = pickle.load(file)
 
 st.title("💻 Computer Purchase Prediction App")
@@ -43,5 +40,6 @@ if st.button("🔍 Predict"):
 # Add a simple visualization
 st.write("### Visualization")
 st.progress(float(proba))
+
 
 
